@@ -4,16 +4,16 @@ public class FindNumberOfProvinces {
 	public int findCircleNum(int[][] M) {
 		boolean[] visited = new boolean[M.length];
 
-		int count = 0;
+		int totalProvinces = 0;
 
 		for (int i = 0; i < M.length; i++) {
 			if (!visited[i]) {
 				dfs(M, visited, i);
-				count++;
+				totalProvinces++;
 			}
 		}
 
-		return count;
+		return totalProvinces;
 	}
 
 	private void dfs(int[][] M, boolean[] visited, int person) {
