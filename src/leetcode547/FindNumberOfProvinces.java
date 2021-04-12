@@ -1,6 +1,7 @@
 package leetcode547;
 
 public class FindNumberOfProvinces {
+	// dfs method
 	public int findCircleNum(int[][] M) {
 		boolean[] visited = new boolean[M.length];
 
